@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="cz1.js"></script>
+        <title>Zające i psy</title>
+    </head>
+    <body>
+    	<div id="select">
+    		Zwierzę: 
+    		<select name="zwierze" id="zwierze">
+    			<option value="0">zające</option>
+    			<option value="1">psy</option>
+    			<option value="2">Wszystko</option>
+    		</select>
+    		r:
+    		<select name="R" id="R">
+    			<option>2</option>
+    			<option>3</option>
+    			<option>3.8</option>
+    		</select>
+    		E:
+    		<select name="E" id="E">
+    			<option>0.005</option>
+    			<option>0.02</option>
+    			<option>0.1</option>
+    		</select>
+    		S:
+    		<select name="S" id="S">
+    			<option>0.02</option>
+    			<option>0.005</option>
+    			<option>0.001</option>
+    		</select>
+    		Z:
+    		<input type="number" name="liczba_z" id="l_z"></input>
+    		Iteracja wprowadzenia psów:
+    		<input type="number" name="iter" id="iter" min="1" max="199"></input>
+    		Liczba psów:
+    		<input type="number" name="liczba_p" id="l_p"></input>
+    		<button id="run">RUN</button>
+    	</div>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </body>
+</html>
